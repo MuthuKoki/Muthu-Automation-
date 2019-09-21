@@ -1,0 +1,29 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 211.163 s <<< FAILURE! - in TestSuite
+feature(com.test.runner.TestRunner)  Time elapsed: 205.987 s  <<< FAILURE!
+cucumber.runtime.CucumberException: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: *//app-cookie-policy/div/div/div/div/button (tried for 20 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: *//app-cookie-policy/div/div/div/div/button (tried for 20 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchWindowException: 
+no such window: window was already closed
+  (Session info: chrome=76.0.3809.132)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'INBAHRPC02933', ip: '10.30.195.201', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\MM0054~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50708}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1ef652ac0727b479a4e2d6174ea3bf9e
+*** Element info: {Using=xpath, value=*//app-cookie-policy/div/div/div/div/button}
+
+trail1(com.test.runner.testZalenium)  Time elapsed: 1.709 s  <<< FAILURE!
+org.openqa.selenium.remote.UnreachableBrowserException: 
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'INBAHRPC02933', ip: '10.30.195.201', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: RemoteWebDriver
+	at com.test.runner.testZalenium.trail1(testZalenium.java:16)
+Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:4444
+	at com.test.runner.testZalenium.trail1(testZalenium.java:16)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at com.test.runner.testZalenium.trail1(testZalenium.java:16)
+
